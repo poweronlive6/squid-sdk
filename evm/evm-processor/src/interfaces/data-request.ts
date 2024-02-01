@@ -19,6 +19,12 @@ export interface LogRequest {
     topic1?: Bytes32[]
     topic2?: Bytes32[]
     topic3?: Bytes32[]
+    parentAddress?: Bytes20[] 
+    grandParentAddress?: Bytes20[]
+    grandGrandParentAddress?: Bytes20[]
+    grandGrandGrandParentAddress?: Bytes20[]
+    grandGrandGrandGrandParentAddress?: Bytes20[]
+    ancestorAddress?: Bytes20[]
     transaction?: boolean
     transactionTraces?: boolean
     transactionLogs?: boolean
@@ -29,6 +35,12 @@ export interface TransactionRequest {
     to?: Bytes20[]
     from?: Bytes20[]
     sighash?: Bytes[]
+    parentAddress?: Bytes20[] 
+    grandParentAddress?: Bytes20[]
+    grandGrandParentAddress?: Bytes20[]
+    grandGrandGrandParentAddress?: Bytes20[]
+    grandGrandGrandGrandParentAddress?: Bytes20[]
+    ancestorAddress?: Bytes20[]
     logs?: boolean
     traces?: boolean
     stateDiffs?: boolean
